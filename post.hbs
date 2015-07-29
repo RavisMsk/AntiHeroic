@@ -1,0 +1,60 @@
+{{!< default}}
+<section class="post-home animated fadeIn" role="main">
+
+    {{#post}}
+    <article class="post main-article">
+
+        <topper>
+            <span>&uarr;</span>
+        </topper>
+
+        <div class="inner">
+            <p class="authority">{{date published_at format="DD MMMM YYYY"}} by {{author}}</p>
+            <p class="jumper">
+                <a href="#" onclick="return false;">Jump to comments &amp; sharing</a>
+            </p>
+            <h1 class="post-title">{{title}}</h1>
+            
+            {{content}}
+
+            <p class="post-tags">{{tags separator=' | '}}</p>
+            <a id="sharing"></a>
+            <p class="share">Share:</p>
+            {{> sharing}}
+        </div>
+
+    </article>
+
+    <div class="post">
+        {{#author}}
+        <div class="author">
+            <img src="{{image}}" width="70" height="70" />
+            <div class="author-bio">
+               <h4><a href="{{url}}">{{name}}</a></h4>
+               <p>{{bio}}</p>
+               <p><a href="{{website}}">{{website}}</a></p>
+            </div>
+        </div>
+        {{/author}}
+    </div>
+    {{/post}}
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = d_id;
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+</section>

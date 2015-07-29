@@ -1,0 +1,21 @@
+{{#foreach posts}}
+<article class="animated post {{#if featured}}featured{{/if}} {{#if @odd}}fadeInRightBig odd{{/if}} {{#if @even}}fadeInLeftBig even{{/if}}">
+    <div class="inner">
+        <time>{{date published_at format="DD.MM.YYYY"}} (UPD. {{date updated_on format="DD.MM.YYYY"}})</time>
+        <h2 class="post-title">
+            <a href="{{url}}">{{title}}</a>
+        </h2>
+        {{#if meta_description}}
+            <p>{{meta_description}}</p>
+        {{/if}}
+        <p class="post-tags">
+            {{tags separator=' | '}}
+        </p>
+        <div class="post-actions">
+            <a class="more" href="{{url}}">Read more</a>
+            <a class="share-post" href="{{url}}#sharing">Share</a>
+        </div>
+    </div>     
+</article>
+<div class="clear"> </div>
+{{/foreach}}

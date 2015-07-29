@@ -1,0 +1,17 @@
+<ul class="share-buttons">
+
+	<li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fravis.me%2F&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('{{url absolute='true'}}') + '&t=' + encodeURIComponent('{{encode title}}')); return false;"><img src="{{asset "images/social_flat_rounded_rects_svg/Facebook.svg"}}"></a></li>
+
+	<li><a href="https://twitter.com/intent/tweet?url={{url absolute=true}}&text={{encode title}}&hashtags={{tags autolink='false'}}" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text={{encode title}}&url=' + encodeURIComponent('{{url absolute=true}}') + '&hashtags={{tags autolink='false'}}'); return false;"><img src="{{asset "images/social_flat_rounded_rects_svg/Twitter.svg"}}"></a></li>
+
+	<li><a href="https://plus.google.com/share?url={{url absolute='true'}}" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent('{{url absolute='true'}}')); return false;"><img src="{{asset "images/social_flat_rounded_rects_svg/Google+.svg"}}"></a></li>
+
+	<li><a href="https://getpocket.com/save?url=https%3A%2F%2Fravis.me%2F&title=" target="_blank" title="Add to Pocket" onclick="window.open('https://getpocket.com/save?url=' + encodeURIComponent('{{url absolute='true'}}') + '&title=' +  encodeURIComponent('{{encode title}}')); return false;"><img src="{{asset "images/social_flat_rounded_rects_svg/Pocket.svg"}}"></a></li>
+
+	<li><a href="http://www.reddit.com/submit?url=https%3A%2F%2Fravis.me%2F&title=" target="_blank" title="Submit to Reddit" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent('{{url absolute='true'}}') + '&title=' + encodeURIComponent('{{encode title}}')); return false;"><img src="{{asset "images/social_flat_rounded_rects_svg/Reddit.svg"}}"></a></li>
+
+	<li><a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fravis.me%2F&title=&summary=&source=https%3A%2F%2Fravis.me%2F" target="_blank" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent('{{url absolute='true'}}') + '&title=' + encodeURIComponent('{{encode title}}')); return false;"><img src="{{asset "images/social_flat_rounded_rects_svg/LinkedIn.svg"}}"></a></li>
+
+	<li><a href="mailto:?subject=&body=:%20https%3A%2F%2Fravis.me%2F" target="_blank" title="Email" onclick="window.open('mailto:?subject={{encode title}}' + '&body={{encode meta_description}}:%20' + encodeURIComponent('{{url absolute='true'}}')); return false;"><img src="{{asset "images/social_flat_rounded_rects_svg/Email.svg"}}"></a></li>
+
+</ul>

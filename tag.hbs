@@ -1,0 +1,18 @@
+{{!< default}}
+<section class="content-home animated fadeIn" role="main">
+    {{#tag}}
+    <article class="post result animated fadeInDownBig">
+        <div class="inner">
+            <h1 class="searching"><a href="{{url}}rss/">{{name}}</a></h1>
+            {{#if description}}
+                <h2>{{description}}</h2>
+            {{/if}}
+        </div>
+    </article>
+    {{/tag}}
+    <div class="wrapper">
+        {{> loop}}
+    </div>
+</section>
+
+{{pagination}}

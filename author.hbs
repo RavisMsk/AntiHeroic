@@ -1,0 +1,24 @@
+{{!< default}}
+<section class="content-home animated fadeIn" role="main">
+	{{#author}}
+	<article class="post result">
+		<div class="inner">
+			{{#if image}}
+				<img class="avatar" src="{{image}}" />
+			{{/if}}
+			<h1 class="searching">
+				<a href="{{url}}rss/">{{name}}</a>
+			</h1>
+			<p class="bio">{{bio}}</p>
+			<p class="posts">Published {{plural ../pagination.total empty='not a single post' singular='% post' plural='% posts'}}.</p>
+			<p class="rss"></p>
+			<p>Can be reached via <a href="{{website}}">{{website}}</a>.</p>
+		</div>
+	</article>
+	{{/author}}
+	<div class="wrapper">
+		{{> loop}}
+	</div>
+</section>
+
+{{pagination}}
