@@ -1,7 +1,7 @@
 {{#foreach posts}}
 <article class="animated post {{#if featured}}featured{{/if}} {{#if @odd}}fadeInRightBig odd{{/if}} {{#if @even}}fadeInLeftBig even{{/if}}">
     <div class="inner">
-        <time>{{date published_at format="DD.MM.YYYY"}} (UPD. {{date updated_on format="DD.MM.YYYY"}})</time>
+        <time>{{date published_at format="DD.MM.YYYY"}} (UPD. {{date updated_at format="DD.MM.YYYY"}})</time>
         <h2 class="post-title">
             <a href="{{url}}">{{title}}</a>
         </h2>
